@@ -1,0 +1,150 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .services, .education, .contact {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .services .card, .education .card, .contact .card {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            text-align: center;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .services .card, .education .card, .contact .card {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .services .card, .education .card, .contact .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name - Tailor & Oil Perfume Expert</h1>
+        <p>Creating Custom Designs and Unique Fragrances</p>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="services">
+        <h2>What I Do</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Tailoring</h3>
+                <p>From custom clothing to stylish alterations, I offer personalized tailoring services for all your needs.</p>
+            </div>
+            <div class="card">
+                <h3>Oil Perfumes</h3>
+                <p>Discover a world of exquisite and unique oil perfumes that leave a lasting impression.</p>
+            </div>
+            <div class="card">
+                <h3>Consultation</h3>
+                <p>Need advice on fashion or fragrance? I provide professional consultations to meet your needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education & Experience</h2>
+        <div class="education">
+            <div class="card">
+                <h3>Bachelor’s Degree</h3>
+                <p>Graduated with a Bachelor's Degree in [Your Field] from [Your University].</p>
+            </div>
+            <div class="card">
+                <h3>Professional Tailoring Certification</h3>
+                <p>Certified in advanced tailoring techniques and fashion design.</p>
+            </div>
+            <div class="card">
+                <h3>Perfume Expert</h3>
+                <p>Extensive knowledge and training in oil perfumes, sourcing, and fragrance creation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <div class="card">
+                <h3>Email</h3>
+                <p>youremail@example.com</p>
+            </div>
+            <div class="card">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="card">
+                <h3>Social Media</h3>
+                <p>Follow me on Instagram and Facebook for updates and offers.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
