@@ -1,24 +1,359 @@
+
+/* Base nav-link style */
+/* === General Styles === */
 body {
-    background-color:deepskyblue;
-    font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #cceeff, #f0faff); /* Gradient sky blue */
+  font-family: 'Segoe UI', sans-serif;
+  color: #034f68;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #026c94;
+}
+
+/* === Navbar === */
+.navbar {
+  background-color: #55c4e6 !important;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff !important;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #87ceeb;
+  text-shadow: 0 0 5px #87ceeb, 0 0 10px #87ceeb;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #87ceeb;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+#logo {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* === Card Styles === */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-title {
+  color: #007ba7;
+}
+
+/* === Footer === */
+footer {
+  background-color: #007ba7;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 50px;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Optional Components === */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.project-card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.testimonial {
+  background-color: #f8f9fa;
+  padding: 40px;
+  border-left: 5px solid #87ceeb;
+  border-radius: 8px;
+}
+
+.contact-banner {
+  background-color: #87ceeb;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-icons i {
+  font-size: 28px;
+  margin: 0 15px;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icons i:hover {
+  transform: scale(1.2);
+  color: #f1f1f1;
+}
+
+.education-section {
+  background-color: #f0f8ff;
+  padding: 60px 0;
+}
+
+.education-section h3 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.education-section .card {
+  border: none;
+  border-left: 5px solid #87ceeb;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-section .card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.education-section .card-text {
+  font-size: 0.95rem;
+  color: black;
+  line-height: 1.5;
+}
+
+.education-section .badge {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+body {
+  background: linear-gradient(to bottom, #cceeff, #f0faff);
+  font-family: 'Segoe UI', sans-serif;
+  color: #034f68;
+}
+
+.card-title {
+  color: #007ba7;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.animated-card {
+  animation: fadeInUp 0.8s ease both;
+}
+
+:root {
+  --brand-pink: black;
+}
+
+/* Card Animation */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .hero {
-    color:black;
-    padding: 100px 20px;
-    text-align: center;
-    
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(233, 30, 99, 0.2);
+}
+
+
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.about-section {
+  background-color: #fff;
+}
+
+.about-card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-sky {
+  color: #0ea5e9; /* Sky blue */
+}
+
+/* Animation Classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.fade-in.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.fade-in.delay-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  footer {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 35vh;
-  }
-  a:hover {
-    background-color: blue;
-    border-radius: 25px;
-    padding: 10px;
-  }
+}
+
+
+
+body {
+  background-color: #f9fbfc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  color: #3399ff;
+  font-weight: bold;
+}
+
+.contact-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 12px;
+}
+
+#logo {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.social-links i {
+  margin-right: 5px;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+}
