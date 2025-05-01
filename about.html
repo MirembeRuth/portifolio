@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>About - My Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="index.html">My Portfolio</a>
+    <img src="stitches_logo-removebg-preview (1)(1).png" alt="My Portfolio Logo" id="logo" style="height: 50px;" >
+  </a>
+    <a class="navbar-brand ms-2" href="index.html">My Portfolio</a>
     <div class="collapse navbar-collapse show">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="services-blog.html">Services & Blog</a></li>
         <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </div>
@@ -25,27 +27,51 @@
 </nav>
 
 <!-- About Section -->
-<section class="container my-5">
-  <h2 class="text-center">About Me</h2>
-  <p class="lead text-center">I’m a passionate individual who blends education, creativity, and entrepreneurship. As a graduate, tailor, and oil perfume seller, I bring style, elegance, and personality into everything I do.</p>
+<section class="about-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">About Me</h2>
+    <p class="lead text-center mb-5">Blending education, creativity, and entrepreneurship — I’m a graduate, tailor, website creator, and oil perfume seller turning dreams into style.</p>
+    
+    <div class="row g-4">
+      <!-- Graduate -->
+      <div class="col-md-4">
+        <div class="about-card shadow fade-in">
+          <h4 class="text-sky">🎓 Graduate</h4>
+          <p>I’ve completed my academic journey and love mentoring and sharing experience with young professionals. Education shaped my discipline and drive.</p>
+        </div>
+      </div>
 
-  <div class="row mt-4">
-    <div class="col-md-4">
-      <h4>🎓 Graduate</h4>
-      <p>I’ve completed my academic journey and now love mentoring and sharing my experience with others starting out.</p>
+      <!-- Tailor -->
+      <div class="col-md-4">
+        <div class="about-card shadow fade-in delay-1">
+          <h4 class="text-sky">🧵 Tailor</h4>
+          <p>I design and create custom outfits for every occasion. Whether modern or traditional African wear, I bring your fashion vision to life with precision and flair.</p>
+        </div>
+      </div>
+
+      <!-- Oil Perfumes -->
+      <div class="col-md-4">
+        <div class="about-card shadow fade-in delay-2">
+          <h4 class="text-sky">🌸 Oil Perfume Seller</h4>
+          <p>My handmade oil perfumes are rich, natural, and long-lasting. Every blend is crafted with inspiration from culture and nature, telling its own unique story.</p>
+        </div>
+      </div>
     </div>
-    <div class="col-md-4">
-      <h4>✂️ Tailor</h4>
-      <p>I design and create custom outfits for all occasions—bringing your unique vision to life with needle and thread.</p>
+
+    <!-- Extra Section -->
+    <div class="row mt-5 justify-content-center fade-in delay-3">
+      <div class="col-md-10 text-center">
+        <h4 class="text-sky">👩🏽‍💻 Website Developer</h4>
+        <p>I also design modern, mobile-friendly websites that help businesses shine online. Clean code, visual appeal, and great user experience come first!</p>
+      </div>
     </div>
-    <div class="col-md-4">
-      <h4>🌸 Oil Perfume Seller</h4>
-      <p>Hand-blended, long-lasting oil perfumes inspired by nature and culture. Each scent tells a story.</p>
-    </div>
+
   </div>
 </section>
 
-<footer>&copy; 2025 My Portfolio</footer>
+<footer class="text-center bg-dark text-light py-3 mt-5">
+  &copy; 2025 My Portfolio
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,43 +1,179 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Home - My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="stitches_logo-removebg-preview (1)(1).png" alt="My Portfolio Logo" id="logo">
+    </a>
     <a class="navbar-brand" href="index.html">My Portfolio</a>
     <div class="collapse navbar-collapse show">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="services-blog.html">Services & Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="hero">
+<!-- Hero -->
+<section class="hero" data-aos="fade-up">
   <h1>Welcome to My Portfolio</h1>
   <p>Graduate | Tailor | Oil Perfume Seller</p>
 </section>
 
-<div class="container my-5">
-  <h2 class="text-center">Explore My Work</h2>
-  <p class="text-center">Click the menu to learn more about what I do!</p>
+<!-- Intro -->
+<div class="container my-5" data-aos="zoom-in">
+  <h2 class="text-center">A Blend of Craft & Creativity</h2>
+  <p class="text-center">Dive into my world of tailoring, fragrance, and design. Every detail tells a story.</p>
 </div>
+
+<!-- Featured Projects -->
+<div class="container my-5">
+  <h3 class="text-center mb-4" data-aos="fade-right">Featured Projects</h3>
+  <div class="row g-4">
+    <div class="col-md-4" data-aos="flip-left">
+      <div class="card project-card">
+        <img src="trauser 2.jpg" class="card-img-top" alt="Project 1"
+        style="width: 355px; height: 350px">
+        <div class="card-body">
+          <h5 class="card-title">Tailoring Work</h5>
+          <p class="card-text">Custom-made outfits crafted with precision and love.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="flip-up">
+      <div class="card project-card">
+        <img src="oilperfume.avif" class="card-img-top" alt="Project 2"
+        style="width: 355px; height: 350px">
+        <div class="card-body">
+          <h5 class="card-title">Perfume Branding</h5>
+          <p class="card-text">Unique oil perfumes, made to last and impress.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="flip-right">
+      <div class="card project-card">
+        <img src="laptop.avif" class="card-img-top" alt="Project 3"
+        style="width: 355px; height: 350px">
+        <div class="card-body">
+          <h5 class="card-title">Portfolio Website</h5>
+          <p class="card-text">This site you're on was designed and built by me!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Testimonial -->
+<div class="container my-5" data-aos="fade-up">
+  <div class="testimonial">
+    <h4>What My Clients Say</h4>
+    <p>"The tailoring service was beyond amazing! The outfit fit perfectly and was delivered on time."</p>
+    <p class="mb-0"><strong>- Happy Customer</strong></p>
+  </div>
+</div>
+
+<!-- Education Section -->
+<section class="education-section py-5" id="education">
+  <div class="container">
+    <h3 class="text-center mb-5" data-aos="fade-up">Education Background</h3>
+    
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Bachelor’s Degree in Librarary and Information Science</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Kyambogo University</h6>
+            <p class="card-text">Graduated in 2022 with strong focus on entrepreneurship, branding, and business strategy.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Diploma in Librarary and Information Science</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Kyambogo University</h6>
+            <p class="card-text"> (2018).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Certificate in Fashion and Design</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Google Digital Skills for Africa</h6>
+            <p class="card-text">Hands-on training in tailoring, garment construction, and fashion illustration</p>(2019).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 - Ongoing with Badge -->
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="card h-100 position-relative">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3">
+              <i class="fas fa-hourglass-half me-1"></i> In Progress
+            </span>
+            <h5 class="card-title">Certificate Web Development</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Women in Technology Uganda</h6>
+            <p class="card-text">Currently learning  web development including HTML, CSS, JavaScript, front frameworks.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Contact Banner -->
+<div class="contact-banner" data-aos="zoom-in">
+  <h4>Let’s Work Together!</h4>
+  <p>Need tailoring, a new fragrance, or help with a website?</p>
+  <div class="contact-icons my-4">
+    <a href="mailto:youremail@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://wa.me/2348012345678" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+  <a href="contact.html" class="btn btn-light mt-2">Contact Me</a>
+</div>
+
 <!-- Footer -->
-<footer class="mt-auto bg-dark text-white text-center p-3">
-    &copy; 2025 My Portfolio
-  </footer>
+<footer>
+  &copy; 2025 My Portfolio
+</footer>
 
+<!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
 </body>
-
-
 </html>
